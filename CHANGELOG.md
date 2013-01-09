@@ -1,3 +1,7 @@
+## v2.0.2
+
+* Minor code cleanup.
+
 ## v2.0.1
 
 * Added Travis CI support.
