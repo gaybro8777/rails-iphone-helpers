@@ -1,4 +1,8 @@
 require 'rubygems'
+require 'bundler/setup'
+
+Bundler.require(:test)
+
 require 'test/unit'
 require 'active_support'
 require 'action_view'
