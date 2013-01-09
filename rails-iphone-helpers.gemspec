@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require File.expand_path('../lib/rails-iphone-helpers/version', __FILE__)
+require File.expand_path('../lib/rails_iphone_helpers/version', __FILE__)
 
 Gem::Specification.new do |s|
   s.name          = 'rails-iphone-helpers'
