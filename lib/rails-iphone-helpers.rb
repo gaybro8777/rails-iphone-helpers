@@ -1,4 +1,4 @@
-require 'action_view/helpers'
+require 'action_view'
 
 module RailsIphoneHelpers
   def iphone(key, *options)
