@@ -7,7 +7,7 @@ Tailor made gem for Ruby on Rails providing helpers used to generate iPhone spec
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rails_iphone_helpers'
+gem 'iphone_helpers'
 ```
 
 And then run:
@@ -19,7 +19,7 @@ $ bundle
 Or install without using Bundler:
 
 ```bash
-$ gem install rails_iphone_helpers
+$ gem install iphone_helpers
 ```
 
 ## Examples
