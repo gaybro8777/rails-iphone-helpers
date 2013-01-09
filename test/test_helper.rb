@@ -3,7 +3,7 @@ require 'bundler/setup'
 
 require 'awesome_print'
 require 'minitest/autorun'
-require File.join(File.dirname(__FILE__), '../lib/rails_iphone_helpers')
+require File.join(File.dirname(__FILE__), '../lib/iphone_helpers')
 
 module MiniTest::Assertions
   def assert_tag(tag, name, attributes = {})

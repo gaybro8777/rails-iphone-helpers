@@ -1,15 +1,15 @@
 # encoding: utf-8
 
-require File.expand_path('../lib/rails_iphone_helpers/version', __FILE__)
+require File.expand_path('../lib/iphone_helpers/version', __FILE__)
 
 Gem::Specification.new do |s|
-  s.name          = 'rails_iphone_helpers'
-  s.version       = RailsIphoneHelpers::VERSION
+  s.name          = 'iphone_helpers'
+  s.version       = IphoneHelpers::VERSION
   s.authors       = ['Anton Lindqvist']
   s.email         = ['anton@qvister.se']
   s.homepage      = 'http://github.com/mptre/rails-iphone-helpers'
   s.description   = 'iPhone specific HTML tags helper'
-  s.summary       = 'Rails plugin providing helpers used to generate iPhone specific html tags.'
+  s.summary       = 'Tailor made gem for Ruby on Rails providing helpers used to generate iPhone specific HTML tags.'
   s.files         = Dir['lib/**/*.rb']
   s.test_files    = Dir['test/**/*_test.rb']
   s.require_paths = ['lib']

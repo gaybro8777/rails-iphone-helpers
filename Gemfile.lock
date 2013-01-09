@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails-iphone-helpers (2.0.0)
+    iphone_helpers (2.0.0)
       actionpack (~> 3.2.0)
 
 GEM
@@ -49,6 +49,6 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print (~> 1.1.0)
+  iphone_helpers!
   minitest (~> 4.4.0)
-  rails-iphone-helpers!
   rake (~> 10.0.0)

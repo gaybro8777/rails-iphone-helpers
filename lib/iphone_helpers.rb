@@ -1,6 +1,6 @@
 require 'action_view'
 
-module RailsIphoneHelpers
+module IphoneHelpers
   def iphone(key, options = {})
     tagname, attributes = send(key, options)
 
@@ -62,5 +62,5 @@ module RailsIphoneHelpers
 end
 
 module ::ActionView::Helpers::TagHelper
-  include RailsIphoneHelpers
+  include IphoneHelpers
 end
