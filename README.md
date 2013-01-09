@@ -33,25 +33,25 @@ $ gem install rails_iphone_helpers
 ### viewport with custom attributes
 
 ```erb
-<%= iphone :viewport, :width => 320, :height => 480, :initial_scale => 2.5, :minimum_scale => 0.5, :maximum_scale => 3, :user_scalable => 'no' %>
+<%= iphone :viewport, width: 320, height: 480, initial_scale: 2.5, minimum_scale: 0.5, maximum_scale: 3, user_scalable: 'no' %>
 ```
 
 ### apple touch icon
 
 ```erb
-<%= iphone :icon, :href => "iphone.png" %>
+<%= iphone :icon, href: asset_path('iphone.png') %>
 ```
 
 ### apple touch icon precomposed
 
 ```erb
-<%= iphone :icon, :href => "iphone.png", :precomposed => true %>
+<%= iphone :icon, href: asset_path('iphone.png'), precomposed: true %>
 ```
 
 ### apple touch startup image
 
 ```erb
-<%= iphone :splash, :href => "splash.png" %>
+<%= iphone :splash, href: asset_path('splash.png') %>
 ```
 
 ### apple mobile web app status bar style
@@ -63,25 +63,25 @@ $ gem install rails_iphone_helpers
 ### apple mobile web app status bar style black
 
 ```erb
-<%= iphone :status_bar, :color => "black" %>
+<%= iphone :status_bar, color: 'black' %>
 ```
 
 ### apple mobile web app status bar style black translucent
 
 ```erb
-<%= iphone :status_bar, :color => "black-translucent" %>
+<%= iphone :status_bar, color: 'black-translucent' %>
 ```
 
 ### disable telephone format detection
 
 ```erb
-<%= iphone :format_detection, :telephone => false %>
+<%= iphone :format_detection, telephone: false %>
 ```
 
 ### enable telephone format detection
 
 ```erb
-<%= iphone :format_detection, :telephone => true %>
+<%= iphone :format_detection, telephone: true %>
 ```
 
 ## Contributing
