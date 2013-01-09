@@ -6,57 +6,83 @@ Tailor made gem for Ruby on Rails providing helpers used to generate iPhone spec
 
 Add this line to your application's Gemfile:
 
-    gem 'rails_iphone_helpers'
+```ruby
+gem 'rails_iphone_helpers'
+```
 
 And then run:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 Or install without using Bundler:
 
-    $ gem install rails_iphone_helpers
+```bash
+$ gem install rails_iphone_helpers
+```
 
 ## Examples
 
 ### viewport
 
-    <%= iphone :viewport %>
+```erb
+<%= iphone :viewport %>
+```
 
 ### viewport with custom attributes
 
-    <%= iphone :viewport, :width => 320, :height => 480, :initial_scale => 2.5, :minimum_scale => 0.5, :maximum_scale => 3, :user_scalable => 'no' %>
+```erb
+<%= iphone :viewport, :width => 320, :height => 480, :initial_scale => 2.5, :minimum_scale => 0.5, :maximum_scale => 3, :user_scalable => 'no' %>
+```
 
 ### apple touch icon
 
-    <%= iphone :icon, :href => "iphone.png" %>
+```erb
+<%= iphone :icon, :href => "iphone.png" %>
+```
 
 ### apple touch icon precomposed
 
-    <%= iphone :icon, :href => "iphone.png", :precomposed => true %>
+```erb
+<%= iphone :icon, :href => "iphone.png", :precomposed => true %>
+```
 
 ### apple touch startup image
 
-    <%= iphone :splash, :href => "splash.png" %>
+```erb
+<%= iphone :splash, :href => "splash.png" %>
+```
 
 ### apple mobile web app status bar style
 
-    <%= iphone :status_bar %>
+```erb
+<%= iphone :status_bar %>
+```
 
 ### apple mobile web app status bar style black
 
-    <%= iphone :status_bar, :color => "black" %>
+```erb
+<%= iphone :status_bar, :color => "black" %>
+```
 
 ### apple mobile web app status bar style black translucent
 
-    <%= iphone :status_bar, :color => "black-translucent" %>
+```erb
+<%= iphone :status_bar, :color => "black-translucent" %>
+```
 
 ### disable telephone format detection
 
-    <%= iphone :format_detection, :telephone => false %>
+```erb
+<%= iphone :format_detection, :telephone => false %>
+```
 
 ### enable telephone format detection
 
-    <%= iphone :format_detection, :telephone => true %>
+```erb
+<%= iphone :format_detection, :telephone => true %>
+```
 
 ## Contributing
 
