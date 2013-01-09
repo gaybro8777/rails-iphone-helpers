@@ -10,9 +10,8 @@ Gem::Specification.new do |s|
   s.homepage      = 'http://github.com/mptre/rails-iphone-helpers'
   s.description   = 'iPhone specific HTML tags helper'
   s.summary       = 'Rails plugin providing helpers used to generate iPhone specific html tags.'
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.files         = Dir['lib/**/*.rb']
+  s.test_files    = Dir['test/**/*_test.rb']
   s.require_paths = ['lib']
   s.add_runtime_dependency 'actionpack', '~> 3.2.0'
   s.add_development_dependency 'awesome_print', '~> 1.1.0'
