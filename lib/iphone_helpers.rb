@@ -3,46 +3,46 @@ require 'action_view/helpers'
 module RailsIphoneHelpers
   def iphone(key, *options)
     options = options.extract_options! || {}
-    tagname, attributes = send("iphone_#{key}", options)
+    tagname, attributes = send(key, options)
 
     tag(tagname, attributes)
   end
 
   protected
 
-  def iphone_format_detection(options)
+  def format_detection(options)
     options[:name] = 'format-detection'
     options[:content] = "telephone=#{(options[:telephone] && 'yes') || 'no'}"
     options[:telephone] = nil
     [:meta, options]
   end
 
-  def iphone_fullscreen(options)
+  def fullscreen(options)
     options[:name] = 'apple-mobile-web-app-capable'
     options[:content] = 'yes'
     [:meta, options]
   end
 
-  def iphone_icon(options)
+  def icon(options)
     options[:rel] = 'apple-touch-icon'
     options[:rel] += '-precomposed' if options[:precomposed]
     options[:precomposed] = nil if options[:precomposed]
     [:link, options]
   end
 
-  def iphone_splash(options)
+  def splash(options)
     options[:rel] = 'apple-touch-startup-image'
     [:link, options]
   end
 
-  def iphone_status_bar(options)
+  def status_bar(options)
     options[:name] = 'apple-mobile-web-app-status-bar-style'
     options[:content] = (%w[black black-translucent].include?(options[:color]) && options[:color]) || 'default'
     options[:color] = nil if options[:color]
     [:meta, options]
   end
 
-  def iphone_viewport(options)
+  def viewport(options)
     options = options.map do |key, value|
       key = key.to_s.gsub('_', '-').to_sym
 
