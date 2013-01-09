@@ -1,4 +1,6 @@
-module ::ActionView::Helpers::TagHelper
+require 'action_view/helpers'
+
+module RailsIphoneHelpers
   def iphone(key, *options)
     options = options.extract_options! || {}
     tagname, attributes = send("iphone_#{key}", options)
@@ -52,4 +54,8 @@ module ::ActionView::Helpers::TagHelper
     options = {:content => content, :name => 'viewport'}
     [:meta, options]
   end
+end
+
+module ::ActionView::Helpers::TagHelper
+  include RailsIphoneHelpers
 end
