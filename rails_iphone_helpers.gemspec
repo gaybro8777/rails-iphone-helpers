@@ -3,7 +3,7 @@
 require File.expand_path('../lib/rails_iphone_helpers/version', __FILE__)
 
 Gem::Specification.new do |s|
-  s.name          = 'rails-iphone-helpers'
+  s.name          = 'rails_iphone_helpers'
   s.version       = RailsIphoneHelpers::VERSION
   s.authors       = ['Anton Lindqvist']
   s.email         = ['anton@qvister.se']
