@@ -1,10 +1,22 @@
-iPhone helpers
-============
+# iPhone Helpers
 
-Rails plugin providing helpers used to generate iPhone specific html tags.
+Tailor made gem for Ruby on Rails providing helpers used to generate iPhone specific HTML tags.
 
-Examples
-=======
+## Installation
+
+Add this line to your application's Gemfile:
+
+    gem 'rails_iphone_helpers'
+
+And then run:
+
+    $ bundle
+
+Or install without using Bundler:
+
+    $ gem install rails_iphone_helpers
+
+## Examples
 
 ### viewport
 
@@ -46,25 +58,16 @@ Examples
 
     <%= iphone :format_detection, :telephone => true %>
 
-Install
-=======
+## Contributing
 
-### Standard install using Rails 3.0.x
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Added some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
 
-    rails plugin install git@github.com:mptre/rails-iphone-helpers.git
 
-### Install using Git submodule
-
-Run the following command from your Rails root directory.
-
-    git submodule add git@github.com:mptre/rails-iphone-helpers.git vendor/plugins/iphone_helpers
-
-You should be able to update this plugin in the future by running the following command from your Rails root directory.
-
-    git submodule update
-
-License
-=======
+## License
 
 Copyright (c) 2010 [Anton Lindqvist](http://qvister.se), released under the MIT license.
 
