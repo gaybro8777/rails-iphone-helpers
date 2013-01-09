@@ -1,5 +1,3 @@
-require 'test_helper'
-
 class IphoneHelpersTest < ActionView::TestCase
   ActionController::Base.assets_dir = '/' # required in order to use image_path outside rails.
 

@@ -1,13 +1,14 @@
-require 'rake'
+#!/usr/bin/env rake
+
+require 'bundler/gem_tasks'
 require 'rake/testtask'
 
-desc 'Default: run unit tests.'
 task :default => :test
 
-desc 'Test the iphone_helpers plugin.'
 Rake::TestTask.new(:test) do |t|
-  t.libs << 'lib'
   t.libs << 'test'
-  t.pattern = 'test/**/*_test.rb'
+  t.test_files = FileList['test/**/*_test.rb']
+  t.name = :test
+  t.ruby_opts = ['-r test_helper']
   t.verbose = true
 end
