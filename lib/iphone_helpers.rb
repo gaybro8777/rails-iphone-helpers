@@ -25,13 +25,11 @@ module ::ActionView::Helpers::TagHelper
     options[:rel] = 'apple-touch-icon'
     options[:rel] += '-precomposed' if options[:precomposed]
     options[:precomposed] = nil if options[:precomposed]
-    options[:href] = image_path(options[:href])
     [:link, options]
   end
 
   def iphone_splash(options)
     options[:rel] = 'apple-touch-startup-image'
-    options[:href] = image_path(options[:href])
     [:link, options]
   end
 
