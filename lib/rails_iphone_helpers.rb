@@ -1,8 +1,7 @@
 require 'action_view'
 
 module RailsIphoneHelpers
-  def iphone(key, *options)
-    options = options.extract_options! || {}
+  def iphone(key, options = {})
     tagname, attributes = send(key, options)
 
     tag(tagname, attributes)
