@@ -50,7 +50,7 @@ module RailsIphoneHelpers
     end
     options = Hash[options]
     defaults = {:'initial-scale' => 1, :'maximum-scale' => 1, :width => 'device-width'}
-    content = defaults.merge(options).stringify_keys.sort.collect { |k,v| "#{k}=#{v}" }.join('; ')
+    content = defaults.merge(options).stringify_keys.sort.collect { |k,v| "#{k}=#{v}" }.join(', ')
     options = {:content => content, :name => 'viewport'}
     [:meta, options]
   end

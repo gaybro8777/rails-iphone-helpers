@@ -38,10 +38,10 @@ class IphoneHelpersTest < MiniTest::Unit::TestCase
   end
 
   def test_viewport
-    assert_tag iphone(:viewport), :meta, name: 'viewport', content: 'initial-scale=1; maximum-scale=1; width=device-width'
+    assert_tag iphone(:viewport), :meta, name: 'viewport', content: 'initial-scale=1, maximum-scale=1, width=device-width'
   end
 
   def test_viewport_with_custom_attributes
-    assert_tag iphone(:viewport, width: 320, height: 480, initial_scale: 2.5, minimum_scale: 0.5, maximum_scale: 3, user_scalable: 'no'), :meta, name: 'viewport', content: 'height=480; initial-scale=2.5; maximum-scale=3; minimum-scale=0.5; user-scalable=no; width=320'
+    assert_tag iphone(:viewport, width: 320, height: 480, initial_scale: 2.5, minimum_scale: 0.5, maximum_scale: 3, user_scalable: 'no'), :meta, name: 'viewport', content: 'height=480, initial-scale=2.5, maximum-scale=3, minimum-scale=0.5, user-scalable=no, width=320'
   end
 end
