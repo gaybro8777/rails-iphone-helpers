@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    iphone_helpers (2.0.1)
+    iphone_helpers (2.0.2)
       actionpack (~> 3.2.0)
 
 GEM
