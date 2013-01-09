@@ -43,7 +43,12 @@ module ::ActionView::Helpers::TagHelper
   end
 
   def iphone_viewport(options)
-    options.each { |k,v| options[k.to_s.gsub('_', '-').to_sym] = v if options.delete(k) }
+    options = options.map do |key, value|
+      key = key.to_s.gsub('_', '-').to_sym
+
+      [key, value]
+    end
+    options = Hash[options]
     defaults = {:'initial-scale' => 1, :'maximum-scale' => 1, :width => 'device-width'}
     content = defaults.merge(options).stringify_keys.sort.collect { |k,v| "#{k}=#{v}" }.join('; ')
     options = {:content => content, :name => 'viewport'}
