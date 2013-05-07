@@ -1,4 +1,4 @@
-# iPhone Helpers [![Continuous Integration](//travis-ci.org/mptre/rails-iphone-helpers.png?branch=master)](http://travis-ci.org/mptre/rails-iphone-helpers)
+# iPhone Helpers [![Continuous Integration](https://travis-ci.org/mptre/rails-iphone-helpers.png?branch=master)](https://travis-ci.org/mptre/rails-iphone-helpers)
 
 Tailor made gem for Ruby on Rails providing helpers used to generate iPhone specific HTML tags.
 
