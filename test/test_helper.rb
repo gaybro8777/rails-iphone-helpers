@@ -2,6 +2,7 @@ require 'rubygems'
 require 'bundler/setup'
 
 require 'awesome_print'
+require 'coveralls'
 require 'minitest/autorun'
 require File.expand_path('../../lib/iphone_helpers', __FILE__)
 
@@ -13,3 +14,5 @@ module MiniTest::Assertions
     assert !document.find(options).nil?
   end
 end
+
+Coveralls.wear!
