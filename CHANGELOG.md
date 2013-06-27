@@ -1,3 +1,9 @@
+## v3.0.0
+
+* Rails 4 support.
+
+  [Ronnie Dilli](//github.com/RonnieDilli)
+
 ## v2.0.2
 
 * Minor code cleanup.
