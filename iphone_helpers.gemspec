@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'awesome_print', '~> 1.1.0'
   s.add_development_dependency 'coveralls', '~> 0.6.0'
   s.add_development_dependency 'minitest', '~> 4.4.0'
-  s.add_development_dependency 'rails', '~> 3.2.0'
+  s.add_development_dependency 'rails', '~> 4.0.0'
   s.add_development_dependency 'rake', '~> 10.0.0'
 end
