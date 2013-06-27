@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.files         = Dir['lib/**/*.rb']
   s.test_files    = Dir['test/**/*_test.rb']
   s.require_paths = ['lib']
-  s.add_runtime_dependency 'actionpack', '~> 3.2.0'
+  s.add_runtime_dependency 'actionpack', '~> 4.0.0'
   s.add_development_dependency 'awesome_print', '~> 1.1.0'
   s.add_development_dependency 'coveralls', '~> 0.6.0'
   s.add_development_dependency 'minitest', '~> 4.4.0'
