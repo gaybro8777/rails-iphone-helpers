@@ -6,8 +6,16 @@ Tailor made gem for Ruby on Rails providing helpers used to generate iPhone spec
 
 Add this line to your application's Gemfile:
 
+### Rails 4
+
 ```ruby
-gem 'iphone_helpers'
+gem 'iphone_helpers', '~> 3.0.0'
+```
+
+### Rails 3
+
+```ruby
+gem 'iphone_helpers', '~> 2.0.0'
 ```
 
 And then run:
