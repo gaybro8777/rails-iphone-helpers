@@ -15,7 +15,7 @@ class IphoneHelpersTest < MiniTest::Unit::TestCase
 
   def test_apple_mobile_web_app_status_bar_style_black_translucent
     assert_tag iphone(:status_bar, color: 'black-translucent'), :meta, name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'
-  end
+ end
 
   def test_apple_touch_icon
     assert_tag iphone(:icon, href: '/assets/iphone.png'), :link, rel: 'apple-touch-icon', href: '/assets/iphone.png'
