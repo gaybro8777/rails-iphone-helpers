@@ -1,3 +1,9 @@
+## v3.0.1 (2014-04-24)
+
+* Rails 4.1 support.
+
+  [Ronnie Dilli](//github.com/RonnieDilli)
+
 ## v3.0.0 (2013-06-27)
 
 * Rails 4 support.
