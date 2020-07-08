@@ -18,5 +18,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'coveralls', '~> 0.6.0'
   s.add_development_dependency 'minitest', '~> 5.1.0'
   s.add_development_dependency 'rails', '~> 4.1.0'
-  s.add_development_dependency 'rake', '~> 10.0.0'
+  s.add_development_dependency 'rake', '~> 13.0.1'
 end
